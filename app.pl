@@ -1,5 +1,11 @@
 #!/usr/bin/perl
-$i = 1;
-print "hello test git\n" if($i == 1);
-#edit testings
-# odd
+	
+if(!open(FFF,"> file.txt")){
+	`sudo touch file.txt`;
+	open(FFF,"> file.txt");
+	print(FFF "test text!\n");
+}else{
+	open(FFF,"> file.txt");
+	print(FFF "test text!\n");
+}
+close(FFF);
